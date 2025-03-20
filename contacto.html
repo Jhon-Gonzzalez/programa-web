@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 24px;
+        }
+        nav {
+            background: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        section {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        label {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 10px 0 5px;
+        }
+        input, textarea {
+            width: 100%;
+            max-width: 500px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            background: #333;
+            color: white;
+            cursor: pointer;
+            border: none;
+            padding: 10px 15px;
+            font-size: 18px;
+            transition: background 0.3s;
+        }
+        input[type="submit"]:hover {
+            background: #555;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contacto</h1>
+    </header>
+    
+    <nav>
+        <a href="inicio.html">Inicio</a>
+        <a href="destinos.html">Destinos</a>
+        <a href="paquetes.html">Paquetes de Viaje</a>
+        <a href="hoteles.html">Hoteles</a>
+        <a href="blog.html">Blog de Viajeros</a>
+        <a href="galeria.html">Galería</a>
+        <a href="testimonios.html">Testimonios</a>
+        <a href="faq.html">Preguntas Frecuentes</a>
+        <a href="reservas.html">Reservas</a>
+    </nav>
+    
+    <section>
+        <h2>Envíanos un mensaje</h2>
+        <form action="mailto:contacto@turismoyviajes.com" method="post" enctype="text/plain">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Turismo y Viajes. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
