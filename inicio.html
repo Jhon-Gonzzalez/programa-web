@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Turismo y Viajes</title>
     <style>
-        body {
+       body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -22,9 +22,20 @@
             margin: 0 15px;
             text-decoration: none;
         }
-        .container {
+        /* Contenedor principal con barra lateral */
+        main {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
             padding: 20px;
-            text-align: center;
+        }
+        /* Sección principal */
+        section {
+            flex: 3;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
         .image-container {
             display: flex;
@@ -36,6 +47,17 @@
             width: 250px;
             height: auto;
             border-radius: 10px;
+        }
+        /* Aside (barra lateral) - Derecha */
+        aside {
+            flex: 1;
+            padding: 20px;
+            background: #787879;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            margin-left: 20px; /* Espacio entre la sección y el aside */
         }
     </style>
 </head>
@@ -57,15 +79,27 @@
         <a href="reservas.html">Reservas</a>
     </nav>
     
-    <section class="container">
-        <h2>Explora el mundo con nosotros</h2>
-        <p>Encuentra los mejores destinos, ofertas y consejos de viaje.</p>
-        <div class="image-container">
-            <img src="Archivos/imagenPlaya.jpg" alt="Playa">
-            <img src="Archivos/imagenMontaña.jpg" alt="Montañas">
-            <img src="Archivos/imagenCiudad.jpg" alt="Ciudad">
-        </div>
-    </section>
+    <main>
+        <section>
+            <h2>Explora el mundo con nosotros</h2>
+            <p>Encuentra los mejores destinos, ofertas y consejos de viaje.</p>
+            <div class="image-container">
+                <img src="Archivos/imagenPlaya.jpg" alt="Playa">
+                <img src="Archivos/imagenMontaña.jpg" alt="Montañas">
+                <img src="Archivos/imagenCiudad.jpg" alt="Ciudad">
+            </div>
+        </section>
+
+        <aside>
+            <h3>🛫 Recomendaciones</h3>
+            <ul>
+                <li><a href="https://travelandleisure-es.com/en-la-maleta/10-tips-para-armar-la-maleta-perfecta/" target="_blank">🏝️ Destinos más visitados en 2025</a></li>
+                <li><a href="https://n26.com/es-es/blog/viajar-barato" target="_blank">🎒 Consejos para viajar barato</a></li>
+                <li><a href="https://travelandleisure-es.com/en-la-maleta/10-tips-para-armar-la-maleta-perfecta/" target="_blank">🧳 Cómo hacer una maleta perfecta</a></li>
+                <li><a href="https://www.google.com" target="_blank">🔍 Buscar en Google</a></li>
+            </ul>
+        </aside>
+    </main>
     
     <footer>
         <p>&copy; 2025 Turismo y Viajes. Todos los derechos reservados.</p>
